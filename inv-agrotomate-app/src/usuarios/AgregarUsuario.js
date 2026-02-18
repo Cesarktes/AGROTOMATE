@@ -69,9 +69,9 @@ export default function AgregarUsuario() {
             
                 <option value="">Seleccione un rol</option>
                 <option value="ADMIN">Administrador</option>
-                <option value="SUPERVISOR">Supervisor</option>
+               {/* <option value="SUPERVISOR">Supervisor</option>*/}
                 <option value="EMPLEADO">Empleado</option>
-                <option value="CLIENTE">Cliente</option>
+                {/*<option value="CLIENTE">Cliente</option>*/}
 
             </select>
         </div>

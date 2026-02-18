@@ -4,24 +4,24 @@ import "./Equipo.css";
 export default function Equipo() {
   const equipo = [
     {
-      nombre: "Carlos Gómez",
+      nombre: "Jaider Giraldo",
       rol: "Gerente agrícola",
-      img: "https://r.mobirisesite.com/2103754/assets/images/photo-1607556114526-058f5efdf49e.jpeg",
+      img: "https://r.mobirisesite.com/2103754/assets/images/photo-1658335786123-b4b2b56a8c1d.jpeg",
     },
     {
-      nombre: "Ana Rodríguez",
+      nombre: "Lina Cardozo",
       rol: "Ingeniera agrónoma",
       img: "https://r.mobirisesite.com/2103754/assets/images/photo-1567468219153-4b1dea5227ea.jpeg",
     },
     {
-      nombre: "Luis Martínez",
+      nombre: "Alejandro Cruz",
       rol: "Logística y transporte",
-      img: "https://r.mobirisesite.com/2103754/assets/images/photo-1658335786123-b4b2b56a8c1d.jpeg",
+      img: "https://r.mobirisesite.com/2103754/assets/images/photo-1607556114526-058f5efdf49e.jpeg",
     },
     {
-      nombre: "María Pérez",
+      nombre: "Cesar Cortes",
       rol: "Control de calidad",
-      img: "https://r.mobirisesite.com/2103754/assets/images/photo-1591714098656-94a8a95dcf50.jpeg",
+      img: "https://mobirise.com/extensions/planm5/assets/images/image14.jpg",
     },
   ];
 

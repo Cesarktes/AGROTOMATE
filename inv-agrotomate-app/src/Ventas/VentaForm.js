@@ -170,7 +170,7 @@ const VentaForm = () => {
         <button
             type="button"
             className="btn btn-secondary"
-            onClick={() => navigate("/")}
+            onClick={() => navigate("/ventas")}
         >
             Cancelar
         </button>
