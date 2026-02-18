@@ -57,7 +57,7 @@ const VentaForm = () => {
       );
 
       setMensaje("✅ Venta registrada correctamente");
-      setCantidad(1);
+      setCantidad(0);
 
     } catch (err) {
       setError("❌ No fue posible registrar la venta");
