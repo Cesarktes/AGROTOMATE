@@ -1,0 +1,34 @@
+
+/* =========================
+   PRODUCTOS
+========================= */
+
+.landing-agrotomate .pricing02 .item-wrapper {
+  height: 100%;
+  background: #ffffff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.landing-agrotomate .pricing02 .item-img img {
+  height: 220px !important;
+  object-fit: cover;
+}
+
+.landing-agrotomate .pricing02 .item-content {
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.landing-agrotomate .pricing02 .item-title {
+  font-size: 1.2rem;
+}
+
+.landing-agrotomate .pricing02 .item-footer {
+  margin-top: auto;
+}

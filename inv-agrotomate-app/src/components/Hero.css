@@ -1,0 +1,41 @@
+
+/* ===============================
+   HERO
+================================ */
+
+.landing-agrotomate .header16 {
+  min-height: 85vh;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)
+    ),
+    url("https://r.mobirisesite.com/2103754/assets/images/photo-1633397517223-9f900fc48e9e.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.landing-agrotomate .hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.landing-agrotomate .hero-text {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .landing-agrotomate .header16 {
+    min-height: 70vh;
+  }
+
+  .landing-agrotomate .hero-title {
+    font-size: 2rem;
+  }
+}

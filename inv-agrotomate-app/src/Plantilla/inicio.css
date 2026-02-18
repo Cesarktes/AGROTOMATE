@@ -1,0 +1,46 @@
+/* =====================================================
+   INICIO.CSS – Estilos específicos para LandingAgrotomate
+===================================================== */
+
+/* =========================
+   GLOBAL
+========================= */
+
+.landing-agrotomate {
+  background-color: #ffffff;
+  padding-top: 80px; /* Altura del navbar */
+}
+
+.landing-agrotomate section {
+  padding: 4rem 0;
+}
+
+.landing-agrotomate h2,
+.landing-agrotomate h3,
+.landing-agrotomate h4 {
+  letter-spacing: -0.5px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.landing-agrotomate .footer2 {
+  background-color: #1b1b1b;
+  padding: 2rem 0;
+}
+
+.landing-agrotomate .footer2 p,
+.landing-agrotomate .footer2 a {
+  color: #ffffff;
+}
+
+/* =========================
+   RESPONSIVE GLOBAL
+========================= */
+
+@media (max-width: 768px) {
+  .landing-agrotomate section {
+    padding: 2.5rem 0;
+  }
+}
