@@ -1,21 +1,21 @@
 # AGROTOMATE
 PROYECTO SENA 2026 GRUPO 1
----
-  Lina Yurani Cardozo Ferreira
-  Jaider Giraldo Arcila
-  Diego Alejandro Cruz Cepeda
-  Cesar Augusto Cortes
----
-# 🌱 Sistema de Gestión AgroTomate FQ
+
+# 🌱 Sistema de Gestión AgroTomate
 
 ## 📌 Descripción
 
-AgroTomate FQ es un sistema web desarrollado para la gestión administrativa de una empresa comercializadora de productos agrícolas.  
+AgroTomate es un sistema web desarrollado para la gestión administrativa de una empresa comercializadora de productos agrícolas.  
 Permite administrar inventario, clientes, proveedores, usuarios y registrar operaciones de venta y compra.
 
 Proyecto desarrollado como evidencia académica para el programa:
 
 **Técnico en Procesamiento de Pruebas de Software – SENA**
+
+- Lina Yurani Cardozo Ferreira
+- Jaider Giraldo Arcila
+- Diego Alejandro Cruz Cepeda
+- Cesar Augusto Cortes
 
 ---
 
