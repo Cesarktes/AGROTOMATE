@@ -1,7 +1,7 @@
 # AGROTOMATE
 PROYECTO SENA 2026
 
-# 🌱 Sistema de Gestión AgroTomate 
+# 🌱 Sistema de Gestión AgroTomate FQ
 
 ## 📌 Descripción
 
@@ -32,6 +32,7 @@ Desarrollar un sistema de información web que permita:
 El sistema está dividido en:
 
 ## 🔹 Backend
+
 Desarrollado con:
 
 - Spring Boot 3
@@ -47,6 +48,7 @@ Controlador → Servicio → Repositorio → Base de Datos
 ---
 
 ## 🔹 Frontend
+
 Desarrollado con:
 
 - React
@@ -90,86 +92,55 @@ Roles implementados:
 
 # 📦 CRUD Implementados
 
-El sistema cuenta con operaciones CRUD completas para las siguientes entidades:
+## 📦 Gestión de Productos
+- Crear producto  
+- Listar productos  
+- Editar producto  
+- Eliminar producto  
+- Control automático de stock  
+
+## 👤 Gestión de Clientes
+- Crear cliente  
+- Listar clientes  
+- Editar cliente  
+- Eliminar cliente  
+
+## 🚚 Gestión de Proveedores
+- Crear proveedor  
+- Listar proveedores  
+- Editar proveedor  
+- Eliminar proveedor  
+
+## 👥 Gestión de Usuarios
+- Crear usuario  
+- Listar usuarios  
+- Editar usuario  
+- Eliminar usuario  
+- Asignar rol (ADMIN / EMPLEADO)  
+- Autenticación de usuarios  
 
 ---
 
-## 📦 1. Gestión de Productos
+# 📋 Requisitos Previos
 
-Permite:
+Antes de ejecutar el proyecto, asegúrese de tener instalado:
 
-- ✔ Crear producto
-- ✔ Listar productos
-- ✔ Editar producto
-- ✔ Eliminar producto
-- ✔ Control de stock automático
-
-Campos principales:
-- Código
-- Nombre
-- Descripción
-- Precio de venta
-- Stock
+- Java 21
+- Node.js 18 o superior
+- MySQL 8.0
+- Maven
+- Git (opcional)
 
 ---
 
-## 👤 2. Gestión de Clientes
+# 🛠️ Entorno de Desarrollo
 
-Permite:
+El proyecto fue desarrollado utilizando:
 
-- ✔ Crear cliente
-- ✔ Listar clientes
-- ✔ Editar cliente
-- ✔ Eliminar cliente
-
-Campos principales:
-- Nombre
-- Teléfono
-- Email
-- Dirección
-
----
-
-## 🚚 3. Gestión de Proveedores
-
-Permite:
-
-- ✔ Crear proveedor
-- ✔ Listar proveedores
-- ✔ Editar proveedor
-- ✔ Eliminar proveedor
-
----
-
-## 👥 4. Gestión de Usuarios
-
-Permite:
-
-- ✔ Crear usuario
-- ✔ Listar usuarios
-- ✔ Editar usuario
-- ✔ Eliminar usuario
-- ✔ Asignar rol (ADMIN / EMPLEADO)
-- ✔ Autenticación de usuarios
-
----
-
-# 💰 Funcionalidades Adicionales
-
-Además de los CRUD, el sistema incluye:
-
-## 📊 Inventario
-- Visualización de stock disponible
-- Actualización automática tras ventas o compras
-
-## 🛒 Ventas (Salidas)
-- Registro de venta
-- Descuento automático de stock
-- Cálculo de valor total
-
-## 🏬 Compras (Entradas)
-- Registro de compra
-- Incremento automático de stock
+- IntelliJ IDEA 2021
+- Eclipse Temurin JDK 21.0.8
+- MySQL Workbench 8.0
+- Node.js 18+
 
 ---
 
@@ -177,7 +148,57 @@ Además de los CRUD, el sistema incluye:
 
 ## 🔹 Backend
 
-1. Crear base de datos:
+1. Crear la base de datos en MySQL:
 
-```sql
 CREATE DATABASE agroinvent_db;
+
+2. Configurar credenciales en el archivo `application.properties`:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/agroinvent_db
+spring.datasource.username=TU_USUARIO
+spring.datasource.password=TU_CONTRASEÑA
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+```
+
+3. Ejecutar la aplicación backend:
+
+```bash
+mvn spring-boot:run
+```
+
+Servidor disponible en:
+
+```
+http://localhost:8080
+```
+
+---
+
+## 🔹 Frontend
+
+4. Ingresar a la carpeta del frontend:
+
+```bash
+cd inv-agrotomate-app
+```
+
+Instalar dependencias:
+
+```bash
+npm install
+```
+
+Ejecutar la aplicación:
+
+```bash
+npm start
+```
+
+Aplicación disponible en:
+
+```
+http://localhost:3000
+```
