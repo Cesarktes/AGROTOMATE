@@ -1,11 +1,11 @@
 # AGROTOMATE
 PROYECTO SENA 2026 GRUPO 1
-
+---
   Lina Yurani Cardozo Ferreira
   Jaider Giraldo Arcila
   Diego Alejandro Cruz Cepeda
   Cesar Augusto Cortes
-
+---
 # 🌱 Sistema de Gestión AgroTomate FQ
 
 ## 📌 Descripción
