@@ -20,7 +20,7 @@ export default function AgregarUsuario() {
         //spread operator ... (expandir los atributos)
         setUsuario({...Usuario, [e.target.name]: e.target.value})
     }
-
+/*
     const onSubmit = async (e) => {
         e.preventDefault();
         console.log(Usuario)
@@ -28,8 +28,43 @@ export default function AgregarUsuario() {
         await axios.post(urlBase, Usuario);
         // Redirigimos a la pagina de inicio
         navegacion('/usuarios');
-    }
+    } */
+    // Metodo que se ejecuta cuando se envía el formulario
+    const onSubmit = async (e) => {
 
+        // Evita que la página se recargue al enviar el formulario
+        e.preventDefault();
+
+        // URL del endpoint del backend (Spring Boot)
+        const urlBase = "http://localhost:8080/agt-app/usuarios";
+
+        try {
+
+            // Se envían los datos del usuario al backend
+            await axios.post(urlBase, Usuario);
+
+            // Si todo sale bien, mostramos mensaje de éxito
+            alert("Usuario creado correctamente");
+
+            // Redirigimos a la lista de usuarios
+            navegacion('/usuarios');
+
+        } catch (error) {
+
+            // Si el backend responde con error controlado (400, 404, etc.)
+            if (error.response) {
+
+                // Mostramos el mensaje que envía el backend
+                // Ejemplo: "El correo ya está registrado"
+                alert(error.response.data);
+
+            } else {
+
+                // Si ocurre un error inesperado (ej: servidor apagado)
+                alert("Error de conexión con el servidor");
+            }
+        }
+    };
 
   return (
        <div className='container'>
